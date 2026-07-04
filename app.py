@@ -20,10 +20,10 @@ IMG_SIZE = (224, 224)
 
 # --- CONFIGURACIÓN DE ACCESO AL MODELO DE FRUTAS ---
 # Apuntamos a la carpeta de tu repositorio donde guardarás los pesos del modelo
-MODEL_DIR = Path("fruits_models")
+MODEL_DIR = Path("modelo_frutas")
 
-# Archivos de configuración generados en tu Colab
-CLASS_PATH = MODEL_DIR / "fruits_class_names.json"
+# Apuntamos a los nombres exactos de tus archivos según las capturas
+CLASS_PATH = MODEL_DIR / "fruits_class_names"  # Sin el .json si se guardó así en tu PC
 MODEL_PATHS = [
     MODEL_DIR / "fruits_mobile_net.keras", 
     MODEL_DIR / "fruits_mobile_net.h5"
